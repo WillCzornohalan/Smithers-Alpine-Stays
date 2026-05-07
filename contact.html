@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Smithers Alpine Stays</title>
+<meta name="description" content="Get in touch with Smithers Alpine Stays. Send us a message about your upcoming stay or ask anything about our Hudson Bay Mountain cabins." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-page-hero { background-image: url('images/landscapes/SMITHERS-16.jpg'); }
+</style>
+</head>
+<body data-season="winter">
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Smithers Alpine Stays — home">
+        <img src="images/logo.png" alt="Smithers Alpine Stays" />
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cabins.html">Cabins</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="hosts.html">Hosts</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="season-toggle" id="seasonToggle" role="switch" aria-checked="false" aria-label="Toggle between winter and summer themes" tabindex="0">
+          <span class="season-toggle__slider" aria-hidden="true"></span>
+          <span class="season-toggle__option season-toggle__option--winter" data-season="winter">
+            <span class="emoji">❄️</span><span class="label">Winter</span>
+          </span>
+          <span class="season-toggle__option season-toggle__option--summer" data-season="summer">
+            <span class="emoji">☀️</span><span class="label">Summer</span>
+          </span>
+        </div>
+        <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="nav-book-btn">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero contact-page-hero">
+    <div class="page-hero-content">
+      <span class="section-eyebrow" style="color: rgba(255,255,255,0.85);">Get in Touch</span>
+      <h1>Contact</h1>
+      <p>One click away from your next adventure.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-eyebrow">Contact Us</span>
+          <h2>We'd love to hear from you.</h2>
+          <p>Please reach out with any enquiries — about availability, the cabins, the mountain, or anything in between. We typically reply within 24 hours.</p>
+          <ul>
+            <li><span class="icon">📍</span><span>Alpine Way<br/>Smithers, British Columbia, Canada</span></li>
+            <li><span class="icon">✉️</span><span>hello@smithersalpinestays.com</span></li>
+            <li><span class="icon">🏔️</span><span>Direct booking via our reservation portal</span></li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <div class="field field--row">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+            </div>
+            <div class="field field--row">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-success" id="formSuccess">Thanks — your message has been sent. We'll be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgency">
+    <div class="container urgency-inner reveal">
+      <h2>One click away from your next adventure.</h2>
+      <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></div>
+          <p>Self-contained ski-in/ski-out cabins on Hudson Bay Mountain in Smithers, British Columbia, Canada.</p>
+          <p style="margin-top: 14px;">Alpine Way<br/>Smithers, British Columbia, Canada</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Cabins</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Airbnb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Smithers Alpine Stays. All rights reserved.</span>
+        <span>Built by Lovelock Advertising.</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

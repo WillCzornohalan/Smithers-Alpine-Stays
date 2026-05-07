@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | Smithers Alpine Stays</title>
+<meta name="description" content="About Smithers Alpine Stays — self-contained ski-in/ski-out cabin rentals in beautiful British Columbia, on Hudson Bay Mountain." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .about-page-hero { background-image: url('images/landscapes/SMITHERS-01.jpg'); }
+</style>
+</head>
+<body data-season="winter">
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Smithers Alpine Stays — home">
+        <img src="images/logo.png" alt="Smithers Alpine Stays" />
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cabins.html">Cabins</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hosts.html">Hosts</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="season-toggle" id="seasonToggle" role="switch" aria-checked="false" aria-label="Toggle between winter and summer themes" tabindex="0">
+          <span class="season-toggle__slider" aria-hidden="true"></span>
+          <span class="season-toggle__option season-toggle__option--winter" data-season="winter">
+            <span class="emoji">❄️</span><span class="label">Winter</span>
+          </span>
+          <span class="season-toggle__option season-toggle__option--summer" data-season="summer">
+            <span class="emoji">☀️</span><span class="label">Summer</span>
+          </span>
+        </div>
+        <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="nav-book-btn">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero about-page-hero">
+    <div class="page-hero-content">
+      <span class="section-eyebrow" style="color: rgba(255,255,255,0.85);">Our Story</span>
+      <h1>About Us</h1>
+      <p>Mountain cabin rentals in beautiful British Columbia.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-eyebrow">About Smithers Alpine Stays</span>
+          <h2>Mountain Cabin Rentals in Beautiful British Columbia</h2>
+          <p>Self-contained ski-in/ski-out cabins nestled on Hudson Bay Mountain and tucked into peaceful corners of the surrounding forest — offering year-round access to nature's best in Smithers, BC.</p>
+          <p>Your ideal base for adventure in every season: carve down snowy slopes in winter, explore scenic hiking and mountain biking trails in summer, unwind in your private hot tub, spot wildlife, paddle across glacial lakes, gather around a crackling wood stove, or simply soak in the breathtaking mountain views.</p>
+          <p>Whatever your pace, the mountain always calls you back.</p>
+          <a href="cabins.html" class="btn btn-primary">View Cabins</a>
+        </div>
+        <div class="about-image about-image--fixed reveal" role="img" aria-label="Hudson Bay Mountain landscape near Smithers"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <div>
+          <span class="section-eyebrow">Guest Reviews</span>
+          <h2>Loved by guests, year after year</h2>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>We've stayed at Bonnie Doon many times and always enjoy our time at this cabin. Great for families and the location is unbeatable!</blockquote>
+          <cite>Axel<span>March 2025</span></cite>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>The house was great, the hot tub was amazing after a day on the slopes. Being able to ski in and ski out was perfect!</blockquote>
+          <cite>Chrystal<span>February 2025</span></cite>
+        </div>
+      </div>
+      <div class="reviews-footer reveal">
+        <span class="superhost-badge">Airbnb Superhost</span>
+        <a href="reviews.html" class="link-arrow">View 100+ Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="amenities">
+    <div class="container">
+      <div class="amenities-head reveal">
+        <span class="section-eyebrow">Amenities</span>
+        <h2>Self-sufficient getaways, with front-row access to Hudson Bay Mountain</h2>
+        <p>All accommodations feature:</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity reveal"><div class="amenity__icon">🛜</div><div class="amenity__name">Free WiFi</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🍳</div><div class="amenity__name">Full Kitchen</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">♨️</div><div class="amenity__name">Private Hot Tub</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🚗</div><div class="amenity__name">Free Parking</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🪵</div><div class="amenity__name">Wood Stove</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🏔️</div><div class="amenity__name">Mountain Views</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">⛷️</div><div class="amenity__name">Ski-in/Ski-out</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🍖</div><div class="amenity__name">BBQ &amp; Outdoor Dining</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgency">
+    <div class="container urgency-inner reveal">
+      <h2>Where comfort, adventure, and nature meet.</h2>
+      <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></div>
+          <p>Self-contained ski-in/ski-out cabins on Hudson Bay Mountain in Smithers, British Columbia, Canada.</p>
+          <p style="margin-top: 14px;">Alpine Way<br/>Smithers, British Columbia, Canada</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Cabins</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Airbnb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Smithers Alpine Stays. All rights reserved.</span>
+        <span>Built by Lovelock Advertising.</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

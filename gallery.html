@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gallery | Smithers Alpine Stays</title>
+<meta name="description" content="A photo gallery of our cabins, Hudson Bay Mountain, and the beauty of Smithers, BC across every season." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .gallery-page-hero { background-image: url('images/landscapes/SMITHERS-11.jpg'); }
+</style>
+</head>
+<body data-season="winter">
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Smithers Alpine Stays — home">
+        <img src="images/logo.png" alt="Smithers Alpine Stays" />
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cabins.html">Cabins</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hosts.html">Hosts</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="season-toggle" id="seasonToggle" role="switch" aria-checked="false" aria-label="Toggle between winter and summer themes" tabindex="0">
+          <span class="season-toggle__slider" aria-hidden="true"></span>
+          <span class="season-toggle__option season-toggle__option--winter" data-season="winter">
+            <span class="emoji">❄️</span><span class="label">Winter</span>
+          </span>
+          <span class="season-toggle__option season-toggle__option--summer" data-season="summer">
+            <span class="emoji">☀️</span><span class="label">Summer</span>
+          </span>
+        </div>
+        <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="nav-book-btn">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero gallery-page-hero">
+    <div class="page-hero-content">
+      <span class="section-eyebrow" style="color: rgba(255,255,255,0.85);">Photo Gallery</span>
+      <h1>The Beauty of Hudson Bay Mountain</h1>
+      <p>Wake up on the mountain. Book your getaway today.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="gallery-grid">
+        <a class="gallery-item" data-lightbox><img src="images/hero.jpg" alt="Sunset hot tub deck on Hudson Bay Mountain" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-11.jpg" alt="Snowy treeline above the clouds" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/IMG_6248.JPG" alt="Bonnie Doon cabin in winter" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/DB-Winter.avif" alt="Double Black Retreat in winter" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/sunrise-chalet/Sunrise-Winter.jpg" alt="Sunrise Chalet in winter" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-16.jpg" alt="Ski-slope panorama" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-01.jpg" alt="Hudson Bay Mountain ridgeline" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/hero-summer.jpg" alt="Treeline at dusk in summer" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/bonnie-doon-summer.jpg" alt="Bonnie Doon cabin in summer" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/double-black-summer.jpg" alt="Double Black Retreat at sunset" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/sunrise-chalet/sunrise-chalet-summer_edited.png" alt="Sunrise Chalet in summer" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-02.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-03.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-06.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-07.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-17.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-19.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/landscapes/SMITHERS-20.jpg" alt="Smithers landscape" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/BONNIE_DOON_INSIDE_PHOTO_1.webp" alt="Bonnie Doon interior" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/BONNIE_DOON_INSIDE_PHOTO_5.avif" alt="Bonnie Doon living area" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/BONNIE_DOON_INSIDE_PHOTO_10.avif" alt="Bonnie Doon kitchen" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/bonnie-doon/BONNIE_DOON_INSIDE_PHOTO_15.avif" alt="Bonnie Doon bedroom" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/DOUBLE_BLACK_PHOTO_2.avif" alt="Double Black Retreat interior" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/DOUBLE_BLACK_PHOTO_5.avif" alt="Double Black Retreat living area" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/DOUBLE_BLACK_PHOTO_10.avif" alt="Double Black Retreat kitchen" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/double-black/DOUBLE_BLACK_PHOTO_15.avif" alt="Double Black Retreat bedroom" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/sunrise-chalet/SUNRISE_PHOTO_2.avif" alt="Sunrise Chalet interior" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/sunrise-chalet/SUNRISE_PHOTO_5.avif" alt="Sunrise Chalet living area" loading="lazy" /></a>
+        <a class="gallery-item" data-lightbox><img src="images/sunrise-chalet/SUNRISE_PHOTO_8.avif" alt="Sunrise Chalet view" loading="lazy" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgency">
+    <div class="container urgency-inner reveal">
+      <h2>Where alpine adventure meets cozy comfort.</h2>
+      <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></div>
+          <p>Self-contained ski-in/ski-out cabins on Hudson Bay Mountain in Smithers, British Columbia, Canada.</p>
+          <p style="margin-top: 14px;">Alpine Way<br/>Smithers, British Columbia, Canada</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Cabins</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Airbnb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Smithers Alpine Stays. All rights reserved.</span>
+        <span>Built by Lovelock Advertising.</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

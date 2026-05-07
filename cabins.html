@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cabins | Smithers Alpine Stays</title>
+<meta name="description" content="Browse our ski-in/ski-out cabins on Hudson Bay Mountain — Bonnie Doon, Double Black Retreat, and Sunrise Chalet. Book your alpine getaway in Smithers, BC." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .cabins-page-hero { background-image: url('images/landscapes/SMITHERS-11.jpg'); }
+</style>
+</head>
+<body data-season="winter">
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Smithers Alpine Stays — home">
+        <img src="images/logo.png" alt="Smithers Alpine Stays" />
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cabins.html" class="active">Cabins</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hosts.html">Hosts</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="season-toggle" id="seasonToggle" role="switch" aria-checked="false" aria-label="Toggle between winter and summer themes" tabindex="0">
+          <span class="season-toggle__slider" aria-hidden="true"></span>
+          <span class="season-toggle__option season-toggle__option--winter" data-season="winter">
+            <span class="emoji">❄️</span><span class="label">Winter</span>
+          </span>
+          <span class="season-toggle__option season-toggle__option--summer" data-season="summer">
+            <span class="emoji">☀️</span><span class="label">Summer</span>
+          </span>
+        </div>
+        <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="nav-book-btn">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero cabins-page-hero">
+    <div class="page-hero-content">
+      <span class="section-eyebrow" style="color: rgba(255,255,255,0.85);">Our Properties</span>
+      <h1>Cabins</h1>
+      <p>Three distinct alpine retreats — each with true ski-in/ski-out access, breathtaking views, and the comforts of home.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cabins-grid">
+        <article class="cabin-card cabin-card--fixed cabin-card--double-black reveal">
+          <div class="cabin-card__media">
+            <div class="cabin-card__photo" role="img" aria-label="Double Black Retreat exterior"></div>
+            <span class="cabin-card__badge">Newly Built</span>
+          </div>
+          <div class="cabin-card__body">
+            <span class="cabin-card__tag">Featured Ski-in/ski-out Cabin</span>
+            <h3>Double Black Retreat</h3>
+            <p>A cozy, ski-in ski-out mountain cabin offering stunning views and year-round comfort on Hudson Bay Mountain.</p>
+            <div class="cabin-card__price">
+              <span class="cabin-card__price-from">From</span>
+              <span class="cabin-card__price-amount">$561</span>
+              <span class="cabin-card__price-currency">CAD</span>
+            </div>
+            <a href="double-black.html" class="link-arrow">View More →</a>
+          </div>
+        </article>
+
+        <article class="cabin-card cabin-card--fixed cabin-card--sunrise reveal">
+          <div class="cabin-card__media">
+            <div class="cabin-card__photo" role="img" aria-label="Sunrise Chalet exterior"></div>
+          </div>
+          <div class="cabin-card__body">
+            <span class="cabin-card__tag">Featured Ski-in/ski-out Cabin</span>
+            <h3>Sunrise Chalet</h3>
+            <p>A bright and spacious alpine escape with breathtaking morning views — perfect for both snowy adventures and summer getaways.</p>
+            <div class="cabin-card__price">
+              <span class="cabin-card__price-from">From</span>
+              <span class="cabin-card__price-amount">$438</span>
+              <span class="cabin-card__price-currency">CAD</span>
+            </div>
+            <a href="sunrise-chalet.html" class="link-arrow">View More →</a>
+          </div>
+        </article>
+
+        <article class="cabin-card cabin-card--fixed cabin-card--bonnie reveal">
+          <div class="cabin-card__media">
+            <div class="cabin-card__photo" role="img" aria-label="Bonnie Doon exterior"></div>
+          </div>
+          <div class="cabin-card__body">
+            <span class="cabin-card__tag">Featured Ski-in/ski-out Cabin</span>
+            <h3>Bonnie Doon</h3>
+            <p>A warm, inviting cabin nestled on the slopes — true ski-in/ski-out access with serene mountain charm all year round.</p>
+            <div class="cabin-card__price">
+              <span class="cabin-card__price-from">From</span>
+              <span class="cabin-card__price-amount">$471</span>
+              <span class="cabin-card__price-currency">CAD</span>
+            </div>
+            <a href="bonnie-doon.html" class="link-arrow">View More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="amenities">
+    <div class="container">
+      <div class="amenities-head reveal">
+        <span class="section-eyebrow">Amenities</span>
+        <h2>Self-sufficient getaways, with front-row access to Hudson Bay Mountain</h2>
+        <p>All accommodations feature:</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity reveal"><div class="amenity__icon">🛜</div><div class="amenity__name">Free WiFi</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🍳</div><div class="amenity__name">Full Kitchen</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">♨️</div><div class="amenity__name">Private Hot Tub</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🚗</div><div class="amenity__name">Free Parking</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🪵</div><div class="amenity__name">Wood Stove</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🏔️</div><div class="amenity__name">Mountain Views</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">⛷️</div><div class="amenity__name">Ski-in/Ski-out</div></div>
+        <div class="amenity reveal"><div class="amenity__icon">🍖</div><div class="amenity__name">BBQ &amp; Outdoor Dining</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgency">
+    <div class="container urgency-inner reveal">
+      <h2>Cabins fill fast. Secure your mountain retreat now.</h2>
+      <a href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></div>
+          <p>Self-contained ski-in/ski-out cabins on Hudson Bay Mountain in Smithers, British Columbia, Canada.</p>
+          <p style="margin-top: 14px;">Alpine Way<br/>Smithers, British Columbia, Canada</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cabins.html">Cabins</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Airbnb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Smithers Alpine Stays. All rights reserved.</span>
+        <span>Built by Lovelock Advertising.</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
