@@ -105,48 +105,89 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-row">
-        <a class="footer-brand" href="index.html">
-          <span class="footer-logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></span>
-          <span>Ski-in/ski-out cabins &middot; Smithers, BC</span>
+  <footer class="sas-footer">
+    <div class="sas-footer-main">
+
+      <div>
+        <a href="index.html">
+          <img class="sas-footer-logo" src="images/logo.png" alt="Smithers Alpine Stays" />
         </a>
-        <div class="footer-groups">
-          <div class="footer-group">
-            <h4 class="footer-group-label">Explore</h4>
-            <nav class="footer-group-links is-grid" aria-label="Footer navigation">
-              <a href="index.html">Home</a>
-              <a href="cabins.html">Cabins</a>
-              <a href="reviews.html">Reviews</a>
-              <a href="explore.html">Explore</a>
-              <a href="about.html">About</a>
-              <a href="contact.html">Contact</a>
-              <a href="gallery.html">Gallery</a>
-            </nav>
-          </div>
-          <div class="footer-group">
-            <h4 class="footer-group-label">Connect</h4>
-            <nav class="footer-group-links" aria-label="Social links">
-              <a href="#" target="_blank" rel="noopener">Instagram</a>
-              <a href="#" target="_blank" rel="noopener">Facebook</a>
-              <a href="#" target="_blank" rel="noopener">Airbnb</a>
-            </nav>
-          </div>
+        <p class="sas-footer-tagline">Ski-in, ski-out cabins nestled on<br>Hudson Bay Mountain, Smithers, BC.</p>
+        <address class="sas-footer-address">
+          Alpine Way<br>
+          Smithers, British Columbia<br>
+          Canada
+        </address>
+      </div>
+
+      <div>
+        <p class="sas-footer-col-heading">Explore</p>
+        <ul class="sas-footer-nav">
+          <li><a href="index.html">Home <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="cabins.html">Cabins <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="reviews.html">Reviews <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="explore.html">Explore <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="about.html">About <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="hosts.html">Hosts <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="gallery.html">Gallery <span class="sas-arrow">&rsaquo;</span></a></li>
+          <li><a href="contact.html">Contact <span class="sas-arrow">&rsaquo;</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="sas-footer-col-heading">Connect</p>
+        <ul class="sas-footer-connect">
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <span class="sas-connect-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8fa8be" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="#8fa8be" stroke="none"/>
+                </svg>
+              </span>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <span class="sas-connect-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8fa8be" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </span>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <span class="sas-connect-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8fa8be" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </span>
+              Airbnb
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="sas-footer-col-heading">Stay in the loop</p>
+        <p class="sas-subscribe-copy">Seasonal offers, availability updates &amp; mountain news &mdash; straight to your inbox.</p>
+        <div class="sas-subscribe-row">
+          <input class="sas-subscribe-input" type="email" placeholder="Your email address" aria-label="Email address" />
+          <button class="sas-subscribe-btn" type="button">Subscribe</button>
         </div>
-        <form class="footer-subscribe" onsubmit="event.preventDefault();">
-          <h4 class="footer-subscribe-label">Stay in the loop</h4>
-          <div class="footer-subscribe-row">
-            <input id="footer-email" type="email" placeholder="you@example.com" aria-label="Email address" required />
-            <button type="submit">Subscribe</button>
-          </div>
-        </form>
+        <p class="sas-subscribe-note">No spam. Unsubscribe anytime.</p>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Smithers Alpine Stays</span>
-        <span class="footer-bottom-sep">&middot;</span>
-        <span>Built by <a href="https://lovelockadvertising.com" target="_blank" rel="noopener">Lovelock Advertising</a></span>
-      </div>
+
+    </div>
+
+    <div class="sas-footer-bar">
+      <p>&copy; 2025 Smithers Alpine Stays. All rights reserved. Built by <a href="https://lovelockadvertising.com" target="_blank" rel="noopener">Lovelock Advertising</a>.</p>
+      <a class="sas-footer-book-btn" href="https://secure.webrez.com/hotel/4262" target="_blank" rel="noopener">Book Now &rarr;</a>
     </div>
   </footer>
 
