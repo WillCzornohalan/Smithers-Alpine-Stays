@@ -105,20 +105,33 @@
     <div class="container">
       <div class="footer-row">
         <a class="footer-brand" href="index.html">
-          <img src="images/logo.png" alt="Smithers Alpine Stays" />
+          <span class="footer-logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></span>
           <span>Ski-in/ski-out cabins &middot; Smithers, BC</span>
         </a>
-        <nav class="footer-nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="cabins.html">Cabins</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="explore.html">Explore</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
+        <div class="footer-groups">
+          <div class="footer-group">
+            <h4 class="footer-group-label">Explore</h4>
+            <nav class="footer-group-links is-grid" aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="cabins.html">Cabins</a>
+              <a href="reviews.html">Reviews</a>
+              <a href="explore.html">Explore</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a href="gallery.html">Gallery</a>
+            </nav>
+          </div>
+          <div class="footer-group">
+            <h4 class="footer-group-label">Connect</h4>
+            <nav class="footer-group-links" aria-label="Social links">
+              <a href="#" target="_blank" rel="noopener">Instagram</a>
+              <a href="#" target="_blank" rel="noopener">Facebook</a>
+              <a href="#" target="_blank" rel="noopener">Airbnb</a>
+            </nav>
+          </div>
+        </div>
         <form class="footer-subscribe" onsubmit="event.preventDefault();">
-          <label class="footer-subscribe-label" for="footer-email">Stay in the loop</label>
+          <h4 class="footer-subscribe-label">Stay in the loop</h4>
           <div class="footer-subscribe-row">
             <input id="footer-email" type="email" placeholder="you@example.com" aria-label="Email address" required />
             <button type="submit">Subscribe</button>
@@ -127,12 +140,6 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; 2025 Smithers Alpine Stays</span>
-        <span class="footer-bottom-sep">&middot;</span>
-        <a href="#" target="_blank" rel="noopener">Instagram</a>
-        <span class="footer-bottom-sep">&middot;</span>
-        <a href="#" target="_blank" rel="noopener">Facebook</a>
-        <span class="footer-bottom-sep">&middot;</span>
-        <a href="#" target="_blank" rel="noopener">Airbnb</a>
         <span class="footer-bottom-sep">&middot;</span>
         <span>Built by <a href="https://lovelockadvertising.com" target="_blank" rel="noopener">Lovelock Advertising</a></span>
       </div>
