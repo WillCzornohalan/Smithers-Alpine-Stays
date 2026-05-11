@@ -1392,10 +1392,23 @@ footer.sas-footer {
   box-sizing: border-box;
 }
 .sas-footer-logo {
-  width: 180px;
-  height: auto;
+  position: relative;
   display: block;
-  margin-bottom: 16px;
+  width: 220px;
+  height: 84px;
+  overflow: hidden;
+  margin: 0 0 14px;
+}
+.sas-footer-logo img {
+  position: absolute;
+  height: 240%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+  pointer-events: none;
+  display: block;
 }
 .sas-footer-tagline {
   font-size: 13.5px;
