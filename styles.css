@@ -452,6 +452,15 @@ section { padding: 96px 0; }
   transition: background-color var(--t-base);
 }
 [data-season="summer"] .page-hero::before { background: rgba(40, 25, 5, 0.5); }
+[data-season="summer"] .about-page-hero,
+[data-season="summer"] .cabins-page-hero,
+[data-season="summer"] .contact-page-hero,
+[data-season="summer"] .explore-page-hero,
+[data-season="summer"] .gallery-page-hero,
+[data-season="summer"] .hosts-page-hero,
+[data-season="summer"] .reviews-page-hero {
+  background-image: url('images/landscapes/smithers-summer.jpg');
+}
 .page-hero-content {
   position: relative;
   z-index: 2;
