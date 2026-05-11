@@ -196,43 +196,38 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="logo"><img src="images/logo.png" alt="Smithers Alpine Stays" /></div>
-          <p>Self-contained ski-in/ski-out cabins on Hudson Bay Mountain in Smithers, British Columbia, Canada.</p>
-          <p style="margin-top: 10px;">Alpine Way<br/>Smithers, British Columbia, Canada</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul class="footer-explore">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cabins.html">Cabins</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="hosts.html">Hosts</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-          <h4 class="footer-h4-stacked">Connect</h4>
-          <ul>
-            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Airbnb</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Stay in the Loop</h4>
-          <p>Get updates on availability and seasonal offers.</p>
-          <form class="footer-subscribe" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+      <div class="footer-row">
+        <a class="footer-brand" href="index.html">
+          <img src="images/logo.png" alt="Smithers Alpine Stays" />
+          <span>Ski-in/ski-out cabins &middot; Smithers, BC</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="cabins.html">Cabins</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="explore.html">Explore</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+        <form class="footer-subscribe" onsubmit="event.preventDefault();">
+          <label class="footer-subscribe-label" for="footer-email">Stay in the loop</label>
+          <div class="footer-subscribe-row">
+            <input id="footer-email" type="email" placeholder="you@example.com" aria-label="Email address" required />
             <button type="submit">Subscribe</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2025 Smithers Alpine Stays. All rights reserved.</span>
-        <span>Built by <a href="https://lovelockadvertising.com" target="_blank" rel="noopener">Lovelock Advertising</a>.</span>
+        <span>&copy; 2025 Smithers Alpine Stays</span>
+        <span class="footer-bottom-sep">&middot;</span>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer-bottom-sep">&middot;</span>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <span class="footer-bottom-sep">&middot;</span>
+        <a href="#" target="_blank" rel="noopener">Airbnb</a>
+        <span class="footer-bottom-sep">&middot;</span>
+        <span>Built by <a href="https://lovelockadvertising.com" target="_blank" rel="noopener">Lovelock Advertising</a></span>
       </div>
     </div>
   </footer>
