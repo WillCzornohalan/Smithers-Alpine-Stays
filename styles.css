@@ -860,87 +860,43 @@ section { padding: 96px 0; }
 .host-card__body p { font-size: 0.97rem; line-height: 1.75; }
 
 /* ================================
-   CONTACT FORM
+   CONTACT
    ================================ */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 72px;
-  align-items: start;
-}
-@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
-.contact-info h2 { margin-bottom: 20px; }
-.contact-info p { font-size: 1.05rem; margin-bottom: 28px; }
-.contact-info ul { display: flex; flex-direction: column; gap: 18px; }
-.contact-info li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  font-size: 0.95rem;
-  color: var(--color-text);
-  transition: color var(--t-base);
-}
-.contact-info li .icon {
-  font-size: 1.3rem;
-  color: var(--color-accent);
-  flex-shrink: 0;
-  transition: color var(--t-base);
-}
-
-.contact-form {
+.contact-cta {
   background: var(--color-surface);
-  padding: 48px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  transition: background-color var(--t-base);
-}
-@media (max-width: 600px) { .contact-form { padding: 32px 24px; } }
-.contact-form__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-@media (max-width: 600px) { .contact-form__row { grid-template-columns: 1fr; } }
-.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
-.field--row { margin-bottom: 0; }
-.field label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-soft);
-  transition: color var(--t-base);
-}
-.field input,
-.field textarea {
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 14px 16px;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg);
-  color: var(--color-text);
-  transition: border-color var(--t-fast), background-color var(--t-base), color var(--t-base);
-  outline: none;
-}
-.field input:focus,
-.field textarea:focus { border-color: var(--color-accent); }
-.field textarea { resize: vertical; min-height: 140px; }
-.contact-form .btn { width: 100%; margin-top: 8px; }
-.form-success {
-  display: none;
-  margin-top: 18px;
-  padding: 14px 18px;
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-accent);
-  border-radius: var(--radius-sm);
-  color: var(--color-text);
-  font-size: 0.92rem;
+  padding: 64px 56px;
   text-align: center;
-  transition: background-color var(--t-base), color var(--t-base), border-color var(--t-base);
+  max-width: 760px;
+  margin: 0 auto;
+  transition: background-color var(--t-base), box-shadow var(--t-base);
 }
-.form-success.visible { display: block; }
+.contact-cta .section-eyebrow { margin-bottom: 14px; }
+.contact-cta h2 { margin-bottom: 18px; }
+.contact-cta p {
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+.contact-cta .btn { padding: 16px 36px; font-size: 1rem; }
+@media (max-width: 600px) { .contact-cta { padding: 48px 28px; } }
+
+.contact-help {
+  text-align: center;
+  max-width: 600px;
+  margin: 48px auto 0;
+}
+.contact-help .section-eyebrow { display: block; margin-bottom: 10px; }
+.contact-help p { font-size: 0.98rem; color: var(--color-text-soft); }
+.contact-help__email {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: color var(--t-fast);
+}
+.contact-help__email:hover { color: var(--color-primary); }
 
 /* ================================
    GALLERY GRID (Masonry)

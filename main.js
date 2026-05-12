@@ -124,14 +124,4 @@
     });
   }
 
-  /* ===== Contact form (no real backend — show success message) ===== */
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const success = document.getElementById('formSuccess');
-      if (success) success.classList.add('visible');
-      contactForm.reset();
-    });
-  }
 })();
