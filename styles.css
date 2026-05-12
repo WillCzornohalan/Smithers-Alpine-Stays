@@ -545,11 +545,6 @@ section { padding: 96px 0; }
 .cabin-card--double-black .cabin-card__photo { background-image: var(--cabin-double-black); }
 .cabin-card--sunrise .cabin-card__photo { background-image: var(--cabin-sunrise); }
 
-/* Subpage variants — fixed images, no season swap */
-.cabin-card--fixed.cabin-card--bonnie .cabin-card__photo { background-image: url('images/bonnie-doon/IMG_6248.JPG'); }
-.cabin-card--fixed.cabin-card--double-black .cabin-card__photo { background-image: url('images/double-black/DB-Winter.avif'); }
-.cabin-card--fixed.cabin-card--sunrise .cabin-card__photo { background-image: url('images/sunrise-chalet/Sunrise-Winter.jpg'); }
-
 .cabin-card__badge {
   position: absolute;
   top: 16px; right: 16px;
