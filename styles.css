@@ -78,7 +78,7 @@ ul { list-style: none; }
   --shadow-md:       0 10px 30px rgba(45, 80, 22, 0.14);
   --shadow-lg:       0 20px 50px rgba(45, 80, 22, 0.20);
 
-  --hero-image: url('images/hero-summer.jpg');
+  --hero-image: url('images/landscapes/smithers-summer.jpg');
   --explore-image: url('images/hero-summer_edited.jpg');
   --about-image: url('images/bonnie-doon/bonnie-doon-summer.jpg');
   --cabin-bonnie: url('images/bonnie-doon/bonnie-doon-summer.jpg');
