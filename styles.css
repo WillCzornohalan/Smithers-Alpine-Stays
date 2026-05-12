@@ -862,41 +862,146 @@ section { padding: 96px 0; }
 /* ================================
    CONTACT
    ================================ */
-.contact-cta {
-  background: var(--color-surface);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  padding: 64px 56px;
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto;
-  transition: background-color var(--t-base), box-shadow var(--t-base);
+.contact-cards {
+  --cc-accent: #4aacd6;
+  --cc-accent-hover: #5bbde7;
+  --cc-tick-text: #ffffff;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  align-items: stretch;
 }
-.contact-cta .section-eyebrow { margin-bottom: 14px; }
-.contact-cta h2 { margin-bottom: 18px; }
-.contact-cta p {
-  font-size: 1.05rem;
-  max-width: 600px;
-  margin: 0 auto 32px;
+[data-season="summer"] .contact-cards {
+  --cc-accent: #e8761d;
+  --cc-accent-hover: #f4a160;
 }
-.contact-cta .btn { padding: 16px 36px; font-size: 1rem; }
-@media (max-width: 600px) { .contact-cta { padding: 48px 28px; } }
+@media (max-width: 900px) {
+  .contact-cards { grid-template-columns: 1fr; gap: 24px; }
+}
 
-.contact-help {
-  text-align: center;
-  max-width: 600px;
-  margin: 48px auto 0;
+.contact-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
-.contact-help .section-eyebrow { display: block; margin-bottom: 10px; }
-.contact-help p { font-size: 0.98rem; color: var(--color-text-soft); }
-.contact-help__email {
-  color: var(--color-accent);
+@media (max-width: 600px) { .contact-card { padding: 40px 28px; } }
+.contact-card .section-eyebrow {
+  margin-bottom: 14px;
+  color: var(--cc-accent);
+  transition: color 0.4s ease;
+}
+.contact-card h3 {
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  margin-bottom: 14px;
+  line-height: 1.25;
+  color: var(--color-text);
+  transition: color 0.4s ease;
+}
+.contact-card > p {
+  color: var(--color-text-soft);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 0 24px;
+  transition: color 0.4s ease;
+}
+
+.contact-card--book {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(74, 172, 214, 0.22);
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+[data-season="summer"] .contact-card--book { border-color: rgba(232, 118, 29, 0.24); }
+.contact-card__ticks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-card__ticks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: color 0.4s ease;
+}
+.contact-card__tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--cc-accent);
+  color: var(--cc-tick-text);
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: background-color 0.4s ease;
+}
+.contact-card__btn {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  padding: 16px 24px;
+  background: var(--cc-accent);
+  color: #fff;
   font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-align: center;
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  transition: color var(--t-fast);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
-.contact-help__email:hover { color: var(--color-primary); }
+.contact-card__btn:hover {
+  background: var(--cc-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.contact-card__url {
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--color-muted);
+  margin: 12px 0 0;
+  transition: color 0.4s ease;
+}
+
+.contact-card--email {
+  background: var(--color-bg-alt);
+  box-shadow: var(--shadow-sm);
+}
+.contact-card__email {
+  display: inline-block;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--cc-accent);
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  padding: 0 0 2px;
+  margin: 4px 0 0;
+  word-break: break-word;
+  transition: color 0.4s ease, opacity 0.2s ease;
+}
+.contact-card__email:hover { opacity: 0.78; }
+.contact-card__note {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin: 24px 0 0;
+  margin-top: auto;
+  padding-top: 24px;
+  transition: color 0.4s ease;
+}
 
 /* ================================
    GALLERY GRID (Masonry)
