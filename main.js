@@ -124,39 +124,33 @@
     });
   }
 
-  /* ===== Reviews — load more ===== */
+  /* ===== Reviews — show all ===== */
   const reviewsGrid = document.querySelector('.reviews-grid--three');
   const loadMoreBtn = document.getElementById('loadMoreReviews');
   const loadMoreCount = document.getElementById('loadMoreCount');
   if (reviewsGrid && loadMoreBtn) {
     const INITIAL = 12;
-    const BATCH = 12;
     const cards = Array.from(reviewsGrid.querySelectorAll('.review-card'));
-    let visible = INITIAL;
+    const remaining = Math.max(0, cards.length - INITIAL);
 
-    function render() {
+    if (remaining === 0) {
+      loadMoreBtn.parentElement.style.display = 'none';
+    } else {
       cards.forEach((card, i) => {
-        const hide = i >= visible;
-        card.classList.toggle('is-hidden', hide);
-        // Cards that are revealed past the initial load should not stay invisible
-        // (the scroll-reveal observer was already detached on first paint).
-        if (!hide) card.classList.add('visible');
+        if (i >= INITIAL) card.classList.add('is-hidden');
       });
-      const remaining = Math.max(0, cards.length - visible);
-      if (remaining === 0) {
+      if (loadMoreCount) loadMoreCount.textContent = '(' + remaining + ' more)';
+
+      loadMoreBtn.addEventListener('click', () => {
+        cards.forEach(card => {
+          card.classList.remove('is-hidden');
+          // Newly revealed cards also need .visible so they aren't stuck at
+          // opacity 0 (the scroll-reveal observer fires only at first paint).
+          card.classList.add('visible');
+        });
         loadMoreBtn.parentElement.style.display = 'none';
-      } else if (loadMoreCount) {
-        const next = Math.min(BATCH, remaining);
-        loadMoreCount.textContent = '(' + next + ' more)';
-      }
+      });
     }
-
-    render();
-
-    loadMoreBtn.addEventListener('click', () => {
-      visible = Math.min(cards.length, visible + BATCH);
-      render();
-    });
   }
 
 })();
