@@ -595,6 +595,19 @@ section { padding: 96px 0; }
 }
 @media (max-width: 768px) { .reviews-grid { grid-template-columns: 1fr; } }
 
+.review-card.is-hidden { display: none; }
+
+.reviews-load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.reviews-load-more__count {
+  margin-left: 6px;
+  opacity: 0.75;
+  font-weight: 500;
+}
+
 .review-card {
   background: var(--color-surface);
   border-radius: var(--radius-md);

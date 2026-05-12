@@ -124,4 +124,39 @@
     });
   }
 
+  /* ===== Reviews — load more ===== */
+  const reviewsGrid = document.querySelector('.reviews-grid--three');
+  const loadMoreBtn = document.getElementById('loadMoreReviews');
+  const loadMoreCount = document.getElementById('loadMoreCount');
+  if (reviewsGrid && loadMoreBtn) {
+    const INITIAL = 12;
+    const BATCH = 12;
+    const cards = Array.from(reviewsGrid.querySelectorAll('.review-card'));
+    let visible = INITIAL;
+
+    function render() {
+      cards.forEach((card, i) => {
+        const hide = i >= visible;
+        card.classList.toggle('is-hidden', hide);
+        // Cards that are revealed past the initial load should not stay invisible
+        // (the scroll-reveal observer was already detached on first paint).
+        if (!hide) card.classList.add('visible');
+      });
+      const remaining = Math.max(0, cards.length - visible);
+      if (remaining === 0) {
+        loadMoreBtn.parentElement.style.display = 'none';
+      } else if (loadMoreCount) {
+        const next = Math.min(BATCH, remaining);
+        loadMoreCount.textContent = '(' + next + ' more)';
+      }
+    }
+
+    render();
+
+    loadMoreBtn.addEventListener('click', () => {
+      visible = Math.min(cards.length, visible + BATCH);
+      render();
+    });
+  }
+
 })();
